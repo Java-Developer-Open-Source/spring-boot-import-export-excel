@@ -1,0 +1,36 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot Import Excel Application",
+      "request": "launch",
+      "mainClass": "com.java.developer.springbootimportexportexcel.SpringBootImportExcelApplication",
+      "projectName": "spring-boot-import-export-excel",
+      "args": "--spring.profiles.active=localhost",
+      "env": {
+        "profile": "dev",
+        "datasource-username": "postgres",
+        "datasource-password": "postgres",
+        "datasource-url": "localhost:5432",
+        "datasource-db": "import-export-excel-service",
+        "ddl-auto": "update",
+        "show-sql": false,
+        "generate-ddl": false,
+        "batch-size": 100,
+        "swagger-ui": true,
+        "api-docs": true,
+        "server-port": 9000
+      }
+    }
+  ]
+}
